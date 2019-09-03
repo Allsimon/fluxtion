@@ -27,6 +27,7 @@ along with this program.  If not, see
     <properties>
         <osgi.version>5.0.0</osgi.version>
         <felix.plugin.version>2.5.3</felix.plugin.version>
+        <dagger.version>2.23.2</dagger.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -443,6 +444,16 @@ along with this program.  If not, see
                 <artifactId>org.osgi.core</artifactId>
                 <version>${osgi.version}</version>
             </dependency>
+          <dependency>
+            <groupId>com.google.dagger</groupId>
+            <artifactId>dagger</artifactId>
+            <version>${dagger.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>com.google.dagger</groupId>
+            <artifactId>dagger-compiler</artifactId>
+            <version>${dagger.version}</version>
+          </dependency>
         </dependencies>
     </dependencyManagement>
 
